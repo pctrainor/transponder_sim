@@ -1,0 +1,38 @@
+# Drone Flight Simulator
+
+This project simulates the flight of a drone along a predefined route and updates its status to a server.
+
+## Files
+
+- `transponder.py`: Contains the main logic for simulating the drone flight.
+
+## How to Run
+
+1. Ensure you have Python installed on your system.
+2. Install the required dependencies:
+   ```sh
+   pip install requests
+   ```
+3. Run the simulation:
+   ```sh
+   python transponder.py
+   ```
+
+## Simulation Details
+
+- The drone follows a predefined set of waypoints.
+- The drone's latitude, longitude, and altitude are updated as it moves.
+- The drone's status is sent to a server at `http://localhost:5000/api/drones/{drone_id}`.
+
+## Waypoints
+
+The drone follows these waypoints:
+
+1. Walton Blvd Walmart (Start)
+2. Center Township
+3. Decatur School District
+4. Bentonvilleville
+5. Sugar Creek Township
+6. Walton Blvd Walmart (End)
+
+## Example Output
