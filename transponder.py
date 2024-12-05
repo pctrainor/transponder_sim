@@ -33,11 +33,11 @@ def simulate_drone_flight(drone_id):
             print(f"Reached waypoint {waypoint_index + 1}: {current_waypoint}")
 
         # Move towards the current waypoint (simplified simulation)
-        latitude += lat_diff * 0.005  # Increased step size for faster movement
-        longitude += lon_diff * 0.005
+        latitude += lat_diff * 0.05  # Increased step size for faster movement
+        longitude += lon_diff * 0.05
 
         # Generate altitude within a specific range
-        altitude = round(random.uniform(100, 500), 2)  # Simulate flying altitude
+        altitude = round(random.uniform(100, 105), 2)  # Simulate flying altitude
 
         drone_data = {
             "BUNO_ID": drone_id,
